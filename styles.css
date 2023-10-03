@@ -59,48 +59,54 @@ body{
 }
 
 .author__content {
+    margin:0;
     text-align:center;
-    line-height: 20px;;
+    line-height: 30px;
 }
 
 .author__name{
     font-size:30px;
     color:#ffb400;
-    line-height:30px;
+    line-height:40px;
 }
 
 .author__subname {
     display:block;
     padding-top:5px;
     color:#fff;
+    text-align:left;
+    padding-left:30px;
 }
 
 .author__description {
     font-size:16px;
-    padding:15px 25px 20px 25px;
-    text-align: justify;
+    padding:0px 25px 0px 25px;
+    margin:13px 0 23px;
+    text-align: left!important;
 }
 
 .author__about__link{
     display:inline-block;
     color:#fff;
-    width:40%;
+    width:60%;
     padding:10px;
-    font-size:x-large;
+    font-size:20px;
+    font-weight:600;
     border: 2px solid #ffb400;
     border-radius:10px;
+    text-transform: uppercase;
 }
 
 .author__about__link:hover, .author__about__link:active{
     color:#fff;
-  background-color:#ffb400;
-  border:1px solid #111;
+    background-color:#ffb400;
+    border:1px solid #111;
 }
 
 
 @media (min-width:768px) and (max-width:1024px) {
     .navbar {
-        padding-top:30px;
+        padding-top:15px;
     }
 
     .navbar li{
@@ -109,30 +115,46 @@ body{
     }
 
     .author__image {  
-        margin:50px auto 10px auto;
+        margin:80px auto 0px auto;
+        padding:5vw 0 2vw 0;
+        width:35%;
     }
 
     .image{
+        width:100%;
         border-radius:50%;
-        border:none;
+        border:8px solid #343131;
     }
 
     .author__content{
-        line-height:35px;
+        line-height:48px;
+        text-align:center!important;
     }
 
     .author__name{
-        font-size:xxx-large;
-        line-height:50px;
+        font-size:38;
+        font-weight:600;
+        line-height:40px;
+    }
+
+    .author__subname {
+        font-size:38px;
+        font-weight:700;
+        text-align:center!important;
     }
 
     .author__description{
-        font-size:28px;
+        font-size:18px;
         padding:15px 35px 20px 35px;
+        margin:0px 90px; 
+        line-height:30px;
+        text-align:center!important;
     }
 
     .author__about__link{
-        font-size:xx-large;
-        border: 4px solid #ffb400;
+        width:30%;
+        padding:5px;
+        font-size:16px;
+        border: 3px solid #ffb400;
     }
 }
