@@ -1,0 +1,138 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none; 
+    text-decoration: none;
+}
+
+body{
+    background-color:#111;
+    color:#fff;
+    font-family: 'Roboto';
+    min-width:373px;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+
+}
+.navbar {
+    padding-top:20px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+}
+
+.navbar li>a{
+    color:#fff;
+    background-color:#2b2a2a;
+    padding:10px;
+    border-radius:50%;
+    border:1px solid #111;
+}
+
+.navbar li{
+    padding:18px;
+    font-size:medium;
+}
+
+.navbar a:hover, .navbar a.active, .navbar:visited{
+    color:#fff;
+    border-radius:50%;
+    background-color:#ffb400;
+}
+
+.author__image {  
+    margin:10px auto;
+    padding:5vw 0;
+    width:50%;
+    align-items:center;
+}
+
+.image{
+    width:100%;
+    border-radius:20px;
+    border-left:5px solid #ffb400;
+    border-bottom:5px solid #ffb400;
+}
+
+.author__content {
+    text-align:center;
+    line-height: 20px;;
+}
+
+.author__name{
+    font-size:30px;
+    color:#ffb400;
+    line-height:30px;
+}
+
+.author__subname {
+    display:block;
+    padding-top:5px;
+    color:#fff;
+}
+
+.author__description {
+    font-size:16px;
+    padding:15px 25px 20px 25px;
+    text-align: justify;
+}
+
+.author__about__link{
+    display:inline-block;
+    color:#fff;
+    width:40%;
+    padding:10px;
+    font-size:x-large;
+    border: 2px solid #ffb400;
+    border-radius:10px;
+}
+
+.author__about__link:hover, .author__about__link:active{
+    color:#fff;
+  background-color:#ffb400;
+  border:1px solid #111;
+}
+
+
+@media (min-width:768px) and (max-width:1024px) {
+    .navbar {
+        padding-top:30px;
+    }
+
+    .navbar li{
+        padding:25px;
+        font-size:30px;
+    }
+
+    .author__image {  
+        margin:50px auto 10px auto;
+    }
+
+    .image{
+        border-radius:50%;
+        border:none;
+    }
+
+    .author__content{
+        line-height:35px;
+    }
+
+    .author__name{
+        font-size:xxx-large;
+        line-height:50px;
+    }
+
+    .author__description{
+        font-size:28px;
+        padding:15px 35px 20px 35px;
+    }
+
+    .author__about__link{
+        font-size:xx-large;
+        border: 4px solid #ffb400;
+    }
+}
