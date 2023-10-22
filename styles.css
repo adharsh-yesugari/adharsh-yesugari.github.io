@@ -306,3 +306,9 @@ h1 span{
         padding:0 0 0 23%;
     } 
 }
+
+@media (min-width: 1400px) {
+    .description{
+        padding:0 5% 0 28%;
+    }
+}
